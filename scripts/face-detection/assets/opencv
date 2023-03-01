@@ -1,0 +1,20 @@
+import cv2
+
+img = cv2.imread("C:/Users/nithu/Desktop/catch-the-ghost/nithu.jpg", -0)
+
+imgResize = cv2.resize(img, (700,700))
+
+cv2.imshow("Frame", imgResize)
+
+
+
+
+
+
+while True:
+    k = cv2.waitKey()
+
+    if k == ord('q'):
+        cv2.destroyAllWindows()
+    else:
+        continue
